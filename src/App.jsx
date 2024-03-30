@@ -7,7 +7,7 @@ function App() {
   const [catName,setCatName] = useState("electronics")
   
   useEffect(() => {
-    fakeApiAxios.get(`/category/${catName}`) // URL'yi düzgün şekilde ayarladık
+    fakeApiAxios.get(`/category/${catName}`)
     .then(res => setApiData(res.data))
     .catch(error => console.error(error));
   },[catName])
