@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const fakeApiAxios = axios.create({
-    baseURL: "https://fakestoreapi.com/products" // baseURL burada düzeltilmeli
+    baseURL: "https://fakestoreapi.com/products"
 });
